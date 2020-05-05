@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to test concatenate
+    steps:
+    - name: concatenate
+      uses: 515hikaru-sandbox/create-actions-test@v1
+      with:
+        target_dir: 'testdata'
+      run: ls
