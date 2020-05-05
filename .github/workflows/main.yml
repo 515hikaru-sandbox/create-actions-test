@@ -12,3 +12,7 @@ jobs:
         target_dir: 'testdata'
     - name: list
       run: ls
+    - uses: actions/upload-artifact@v2
+      with:
+        name: main
+        path: ./main.txt
