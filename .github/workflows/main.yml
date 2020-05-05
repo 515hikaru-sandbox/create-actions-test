@@ -9,4 +9,5 @@ jobs:
       uses: 515hikaru-sandbox/create-actions-test@v1
       with:
         target_dir: 'testdata'
+    - name: list
       run: ls
