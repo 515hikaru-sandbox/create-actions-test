@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test concatenate
     steps:
+    - uses: actions/checkout@v2
     - name: concatenate
       uses: 515hikaru-sandbox/create-actions-test@v1
       with:
